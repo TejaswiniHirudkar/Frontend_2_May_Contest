@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>May Contest Two</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="main">
+    <p>Filter ui cards via their profession.</p><br>
+    <select id="profession-select">
+        <option value="">Select Profession</option>
+        <option value="developer">Developer</option>
+        <option value="admin">Admin</option>
+      </select>
+      <br>
+      <div id="employee-container">
+
+      </div>
+      <button id="filter-button">Filter</button><br>
+
+      <p>Add a new user</p><br>
+      <div class="down">
+          
+        <div>
+            <label for="name-input">Enter Name</label><br>
+            <input type="text" id="name-input" class="input" placeholder="Name">
+        </div>
+       
+       <div>
+        <label for="profession-input">Enter Profession</label><br>
+        <input type="text" id="profession-input" class="input" placeholder="Profession">
+       </div>
+        
+
+     <div>
+        <label for="age-input">Enter Age</label><br>
+        <input type="number" id="age-input" class="input" placeholder="Age">
+     </div>
+    
+      </div>
+      <button id="add-button">Add User</button>
+    
+   </div>
+    <script src="script.js"></script>
+</body>
+</html>
