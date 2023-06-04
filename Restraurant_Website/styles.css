@@ -1,0 +1,84 @@
+*{
+    background-color: black;
+    color: rgb(236, 239, 130);
+    box-sizing: border-box;
+}
+
+body{
+    width:90%;
+    margin: auto;
+}
+
+header{
+    display: block;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    height: 80px;
+}
+header h1{
+    color: rgb(210, 244, 96);
+    font-size: 40px;
+}
+
+.menu-item{
+    padding:4px;
+    height: 250px;
+}
+
+.menu-item img{
+    width:100%;
+    height:200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.menu-item img:hover{
+    transform: scaleX(1.08);
+}
+
+.nameprice{
+    display: block;
+    text-align: center;
+}
+
+h3, p{
+    width: 100%;
+    margin: auto;
+}
+
+#menu-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap:10px;
+    padding-top:30px;
+}
+
+button{
+    border: none;
+    border-radius: 50px;
+    display: block;
+    width:300px;
+    margin: auto;
+    height: 50px;
+    background-color: rgb(210, 244, 96);
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+}
+button:hover{
+    background-color: rgb(241, 244, 152);
+}
+
+@media (max-width:1008px){
+    #menu-container{
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+    }
+}
+@media (max-width:640px){
+    #menu-container{
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+    }
+}
+  
